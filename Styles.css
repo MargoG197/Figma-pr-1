@@ -253,3 +253,25 @@ p {
     right: 0;
     top: 68px;
 }
+
+.group8 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 538px;
+}
+
+.online_control {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    left: 489px;
+    bottom: 230px;
+}
