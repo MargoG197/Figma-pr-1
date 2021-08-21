@@ -627,7 +627,7 @@ body * {
 }
 
 .container_page4 {
-    background-image: url(images/image\ 6.1.png);
+    background-image: url('/Images/ 6.1.png');
     background-color: white;
     width: 703px;
     height: 645px;
@@ -770,7 +770,7 @@ body * {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    background-image: url(images/image\ 5.1.png);
+    background-image: url('/Images/image 5.1.png');
     background-size: cover;
     position: relative;
 }
@@ -1060,7 +1060,7 @@ body * {
     justify-content: space-between;
     align-items: center;
     height: 953px;
-    background-image: url(images/image\ 7.2.png);
+    background-image: url(/images/image\ 7.2.png);
     background-size: cover;
 }
 
@@ -1220,7 +1220,7 @@ body * {
         width: 176px;
     }
     .wrapper_p1 {
-        background-image: url('Images/image 4.3.jpg');
+        background-image: url('/Images/ 4.3.jpg');
         object-fit: contain;
         width: 375px;
         height: 476px;
