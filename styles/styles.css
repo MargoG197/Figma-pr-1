@@ -201,7 +201,6 @@ body * {
     background-color: black;
     height: 1090px;
     padding-top: 120px;
-    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -209,8 +208,6 @@ body * {
 .page2 {
     display: flex;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
     width: 1200px;
     height: 551px;
 }
@@ -274,7 +271,6 @@ body * {
     font-size: 14px;
     line-height: 27px;
     color: #FFFFFF;
-    margin-top: 34px;
     text-transform: none;
     margin-top: 9px;
 }
@@ -1267,7 +1263,7 @@ body * {
     .projects_page {
         height: 840px;
         padding-top: 0;
-        width: 375px;
+        /* width: 375px; */
     }
     .page2 {
         display: flex;
@@ -1276,7 +1272,6 @@ body * {
         align-items: center;
         width: 341px;
         height: 632px;
-        margin: 0;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1288,10 +1283,9 @@ body * {
         padding-top: 36px;
     }
     .wrapper_p22 {
-        display: block;
+        display: flex;
+        align-items: center;
         width: 375px;
-        margin-left: auto;
-        margin-right: auto;
         padding: 0;
     }
     .wrapper_p22>img {
@@ -1301,10 +1295,9 @@ body * {
         position: absolute;
         margin-top: -266px;
         padding: 0;
-        margin-left: auto;
-        margin-right: auto;
     }
-    .header_nav2 {
+    .header_nav2,
+    .header_nav_item2 {
         display: none;
     }
     .title_p2 {
@@ -1352,10 +1345,12 @@ body * {
     .container_p2 {
         display: block;
         margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
         width: 340px;
         height: 207px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .image_page2 {
         display: block;
@@ -1472,11 +1467,12 @@ body * {
     .repair_opt_p3_content {
         width: 375px;
         height: 484px;
-        padding-left: 30px;
+        /* padding-left: 30px; */
         margin-bottom: 170px;
     }
     .repair_opt_pictures {
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
         width: 340px;
         height: 484px;
     }
