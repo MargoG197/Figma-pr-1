@@ -55,7 +55,6 @@ body * {
 
 .main_page {
     height: 707px;
-    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -208,15 +207,17 @@ body * {
 .page2 {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
     height: 551px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper_p2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 442px;
+    max-width: 442px;
     height: 480px;
     padding-top: 110px;
 }
@@ -225,7 +226,7 @@ body * {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 679px;
+    max-width: 679px;
     height: 551px;
 }
 
@@ -371,7 +372,6 @@ body * {
 
 .measurements_page {
     height: 1370px;
-    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -546,9 +546,6 @@ body * {
     position: relative;
 }
 
-
-/*  picture size */
-
 .deco_option {
     display: block;
     position: absolute;
@@ -560,9 +557,6 @@ body * {
     background-color: white;
     z-index: 3;
 }
-
-
-/* discription size */
 
 .deco_page3 {
     padding-left: 31px;
@@ -599,7 +593,6 @@ body * {
 
 .request_page {
     height: 1000px;
-    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -608,7 +601,7 @@ body * {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -754,7 +747,6 @@ body * {
 
 .styles_page {
     height: 864px;
-    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -777,7 +769,7 @@ body * {
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    width: 1239px;
+    max-width: 1239px;
 }
 
 .content_page5 {
@@ -873,7 +865,6 @@ body * {
 .clients_page {
     padding-top: 69px;
     height: 1025px;
-    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -1015,7 +1006,6 @@ body * {
     justify-content: center;
     align-items: flex-end;
     height: 100px;
-    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -1036,7 +1026,6 @@ body * {
 .questions_page {
     height: 953px;
     margin-top: 200px;
-    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
 }
