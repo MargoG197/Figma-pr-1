@@ -234,10 +234,9 @@ body * {
 
 .header_nav2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 17px;
     padding-left: 0;
-    padding-right: 40px;
     margin-bottom: 53px;
 }
 
@@ -249,6 +248,7 @@ body * {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.3);
     padding-bottom: 5px;
+    margin-right: 27px;
 }
 
 .header_nav_item2 a:hover {
@@ -1470,7 +1470,7 @@ body * {
         padding: 0;
     }
     .repair_opt_p3_content {
-        width: 392px;
+        width: 375px;
         height: 484px;
         padding-left: 30px;
         margin-bottom: 170px;
