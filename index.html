@@ -12,25 +12,25 @@
 </head>
 
 <body>
-    <section id="main_page" class="main_page">
-        <header class="header">
-            <div class="header_content">
-                <div class="logo">IC "Repair Design Project"</div>
-                <nav>
-                    <ul class="header_nav">
-                        <li class="title header_nav_item"><a href="#main_page">HOME</a></li>
-                        <li class="title header_nav_item"><a href="#projects_page">PROJECTS</a></li>
-                        <li class="title header_nav_item"><a href="#request_page">MEASUREMENT</a></li>
-                        <li class="title header_nav_item"><a href="#our_clients_page">REVIEWS</a></li>
-                        <li class="title header_nav_item"><a href="#contacts_page">CONTACTS</a></li>
-                        <li class="title header_nav_item"><a href="#styles_page">STYLES</a></li>
-                    </ul>
-                </nav>
-                <div class="header_nav_item phone"><a href="tel: +7 (928) 768-32-39">+7 (928) 768-32-39</a></div>
-                <button class="button button_call">Request a call</button>
-            </div>
-        </header>
-        <section class="wrapper_p1">
+    <header class="header">
+        <div class="header_content">
+            <div class="logo">IC "Repair Design Project"</div>
+            <nav>
+                <ul class="header_nav">
+                    <li class="title header_nav_item"><a href="#main_page">HOME</a></li>
+                    <li class="title header_nav_item"><a href="#projects_page">PROJECTS</a></li>
+                    <li class="title header_nav_item"><a href="#request_page">MEASUREMENT</a></li>
+                    <li class="title header_nav_item"><a href="#our_clients_page">REVIEWS</a></li>
+                    <li class="title header_nav_item"><a href="#contacts_page">CONTACTS</a></li>
+                    <li class="title header_nav_item"><a href="#styles_page">STYLES</a></li>
+                </ul>
+            </nav>
+            <div class="header_nav_item phone"><a href="tel: +7 (928) 768-32-39">+7 (928) 768-32-39</a></div>
+            <button class="button button_call">Request a call</button>
+        </div>
+    </header>
+    <main id="main_page" class="main_page">
+        <div class="wrapper_p1">
             <div class="wrapper_p1-overlay"></div>
             <div class="container_p1">
                 <h1 class="title title_p1">Turnkey Repair in the city of <span class="yellow">Rostov-on-Don</span></h1>
@@ -40,14 +40,14 @@
                     <button class="button transparent">SUBMIT YOUR APPLICATION</button>
                 </container>
             </div>
-        </section>
-    </section>
+        </div>
+    </main>
 
     <!-- page1  page1  page1  page1 -->
 
-    <section id="projects_page" class="projects_page">
-        <section class="page2">
-            <section class="wrapper_p2">
+    <main id="projects_page" class="projects_page">
+        <div class="page2">
+            <container class="wrapper_p2">
                 <div>
                     <h1 class="title title_p2">Completed<br> projects</h1>
                     <p class="text3_margin text3">Only a small part of the work performed by our company is presented<br> on the site. For 14 years on in the construction<br> market we have made happy more than 1000 families</p>
@@ -69,9 +69,9 @@
                 <div>
                     <img class="group8" src="Images/Group 8.4.svg" alt="navigation">
                 </div>
-            </section>
-            <section class="wrapper_p22">
-                <nav>
+            </container>
+            <container class="wrapper_p22">
+                <nav class="header_nav2_wrapper">
                     <ul class="header_nav2">
                         <li class="title header_nav_item2"><a href="#">Rostov-on-Don, Admiral</a></li>
                         <li class="title header_nav_item2"><a href="#">Sochi Thieves</a></li>
@@ -79,8 +79,8 @@
                     </ul>
                 </nav>
                 <img src="Images/image 2.1.png" alt="chairs">
-            </section>
-        </section>
+            </container>
+        </div>
         <div class="container_online_control">
             <p class="title online_control">online control</p>
             <div class="pic_online_control">
@@ -94,11 +94,11 @@
             <img class="layer_page2" src="Images/Rectangle 4.15.png">
             <img class="svg_page2" src="Images/Group 8.svg">
         </container>
-    </section>
+    </main>
 
     <!-- page2  page2  page2  page2 -->
 
-    <section class="measurements_page">
+    <main class="measurements_page">
         <container class="adaptiv_design_container">
             <div>
                 <img class="rectangle_69" src="Images/Rectangle 6.9.svg" alt="rectangle">
@@ -182,30 +182,30 @@
                 </container>
             </div>
         </container>
-    </section>
+    </main>
 
     <!-- page3  page3  page3  page3 -->
 
-    <section id="request_page" class="request_page">
+    <main id="request_page" class="request_page">
         <container class="request_page_wrapper">
             <div class="container_page4">
                 <span class="container_page4_1"> 
-                <div class="border_circle">
+                  <div class="border_circle">
                     <p class="subtitle circle_p4">01</p>
                     <p class="text_page4">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>
-                </div>
-                <div class="border_circle">
+                  </div>
+                  <div class="border_circle">
                     <p class="subtitle circle_p4">02</p>
                     <p class="text_page4">Free metering</p>
-                </div>
-                <div class="border_circle">
+                  </div>
+                  <div class="border_circle">
                     <p class="subtitle circle_p4">03</p>
                     <p class="text_page4">Free consultation</p>
-                </div>
-                <div class="border_circle">
+                  </div>
+                  <div class="border_circle">
                     <p class="subtitle circle_p4">04</p>
                     <p class="text_page4">Get a cost estimate and the timing of your future repairs</p>
-                </div>
+                  </div>
                 </span>
             </div>
             <form class="container_page4_2">
@@ -220,7 +220,7 @@
                 </p>
                 <p class="cont_page_p4">
                     <b class="placeholder_name placeholder_name_p4_p7">Email</b><br>
-                    <input class="placeholder placeholder_p4" name="email" type="text" placeholder="Your email">
+                    <input class="placeholder placeholder_p4" name="email" type="text" placeholder="Your email:">
                 </p>
                 <div class="checkbox checkbox_p4">
                     <input class="custom_checkbox" type="checkbox" checked><label class="checkbox_text checkbox_text_p4_p7">I agree to the processing of personal data</label>
@@ -232,11 +232,11 @@
                 </div>
             </form>
         </container>
-    </section>
+    </main>
 
     <!-- page4  page4  page4  page4 -->
 
-    <section id="styles_page" class="styles_page">
+    <main id="styles_page" class="styles_page">
         <div class="container_page5-overlay"></div>
         <container class="container_page5">
             <div class="content_page5">
@@ -262,11 +262,11 @@
                 <img class="image5_2" src="Images/image 5 (2).png">
             </div>
         </container>
-    </section>
+    </main>
 
     <!-- page5  page5  page5  page5 -->
 
-    <section id="our_clients_page" class="clients_page">
+    <main id="our_clients_page" class="clients_page">
         <div class="container_our_clients">
             <p class="title our_clients">our clients</p>
             <img class="svg_11_4" src="Images/Group 2.14.svg">
@@ -316,11 +316,11 @@
                 <img class="frame_p6_2" src="Images/Frame.svg">
             </div>
         </container>
-    </section>
+    </main>
 
     <!-- page6  page6  page6  page6 -->
 
-    <section class="questions_page">
+    <main class="questions_page">
         <container class="background_p7">
             <div class="background_p7-overlay"></div>
             <container class="container_map_p7">
@@ -355,7 +355,7 @@
                 <button class="button button_page7">SUBMIT</button>
             </form>
         </container>
-    </section>
+    </main>
     <footer class="footer" id="footer">
         <div class="container footer_content">
             <div class="logo">IC "Repair Design Project"</div>
