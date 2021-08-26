@@ -52,10 +52,6 @@
         cursor: pointer;
     }
     
-    .main_page {
-        margin: 0 auto;
-    }
-    
     .button_call {
         font-style: italic;
         border-radius: 2px;
@@ -79,11 +75,10 @@
     .header_content {
         display: flex;
         justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         align-items: center;
         height: 83px;
-        max-width: 1239px;
+        max-width: 1200px;
     }
     
     .header_nav {
@@ -218,7 +213,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        max-width: 679px;
+        max-width: 700px;
     }
     
     .header_nav2 {
@@ -435,14 +430,13 @@
     }
     
     .checkbox_3 {
-        display: flex;
-        justify-content: center;
+        display: block;
+        text-align: center;
         align-self: center;
         margin-top: 40px;
         width: 769px;
     }
-    
-    .checkbox {
+    /* .checkbox {
         display: flex;
         justify-content: center;
         align-self: center;
@@ -457,9 +451,8 @@
         border-radius: 1px;
         margin: 3px 3px 3px 4px;
         padding: initial;
-    }
-    
-    .custom_checkbox:checked {
+    } */
+    /* .custom_checkbox:checked {
         display: block;
         width: 18px;
         height: 18px;
@@ -470,16 +463,53 @@
         margin: 3px 3px 3px 4px;
         padding: initial;
         content: stroke;
-    }
+    } */
     
     .checkbox_text {
         font-size: 14px;
         line-height: 23px;
-        padding-left: 8px;
     }
     
     .checkbox_text_p3 {
         color: #181818;
+    }
+    
+    .custom_checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    .custom_checkbox+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+    
+    .custom_checkbox+label::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #E3B873;
+        border-radius: 2px;
+        margin-right: 9px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+    }
+    
+    .custom_checkbox:checked+label::before {
+        border-color: #E3B873;
+        background-color: #E3B873;
+        background-image: url('../Images/Group checkbox.svg');
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    .custom_checkbox:not(:checked)+label::before {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
     
     .container_types_of_repair {
@@ -512,11 +542,10 @@
         background-color: white;
         padding-bottom: 250px;
         margin-top: 50px;
+        max-width: 1200px;
     }
     
     .repair_opt_pictures {
-        margin-left: 30px;
-        padding-left: 0px;
         width: 392px;
         display: block;
         position: relative;
@@ -526,11 +555,10 @@
         display: block;
         position: absolute;
         width: 330px;
-        margin-left: 60px;
         margin-top: -127px;
+        margin-left: 30px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
         background-color: white;
-        z-index: 3;
     }
     
     .deco_page3 {
@@ -741,13 +769,10 @@
     .content_page5 {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-items: space-between;
-        width: 411px;
+        width: 350px;
         z-index: 2;
         padding-top: 137px;
-        padding-left: 70px;
+        padding-left: 30px;
     }
     
     .header_page5 {
@@ -871,6 +896,7 @@
         background-color: white;
         padding-bottom: 250px;
         margin-bottom: 100px;
+        max-width: 1200px;
     }
     
     .clients_stories_p6>container {
@@ -962,6 +988,7 @@
         height: 100px;
         margin-left: auto;
         margin-right: auto;
+        max-width: 1200px;
     }
     
     .frame_p6 {
@@ -970,7 +997,7 @@
     }
     
     .frame_p6_2 {
-        margin-left: -200px;
+        margin-left: -115px;
         width: 700px;
     }
     /* page 6 end page 6 end  page 6 end  page 6 end */
@@ -1109,7 +1136,7 @@
         padding: 50 0;
         align-items: center;
         height: 133px;
-        max-width: 1239px;
+        max-width: 1200px;
     }
     
     .footer {
