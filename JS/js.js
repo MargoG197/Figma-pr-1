@@ -62,27 +62,27 @@ let sliderDescription = page2.querySelector(".container2");
 
 //вызываем функции
 initImages();
-initDescription();
 initArrows();
 initDots();
 initNavigation();
 
 
-// функция инициализации картинок
+// работа по инициализации картинок начало
 function initImages(){
 images.forEach((image, index) =>{
 let imageDiv = `<img src="${images[index].src}" class = "image n${index} ${index === 0? "active": "" }" data-index="${index}" alt="renovation_pictures">`;
 sliderImages.innerHTML += imageDiv;
     });
 }
-// конец функции инициализации картинок
+// работа по инициализации картинок конец
 
-function initDescription(){
-    data.forEach((item, index) =>{
-    let insertData = `<div class = "container2_2 n${index} ${index === 0? "active" : "" }" data-index = "${index}">${data[index].container}</div>`;
+// работа с блоком текста начало
+function initDescription(num){
+    let insertData = `<div class = "container2_2">${data[num].container}</div>`;
     sliderDescription.innerHTML = insertData;
-        });
     }
+
+// работа с блоком текста конец
 
 
 // работа со стрелками начало
@@ -120,7 +120,7 @@ function initDots(){
 // работа с точками конец
 
 
-// начало работы с навигацией
+// работа с навигацией начало
 function initNavigation(){
 let navItems = sliderNavigation.querySelectorAll(".header_nav_item2");
 
@@ -139,9 +139,7 @@ moveSlider(this.dataset.index);
 
 };
 
-// окончание работы с навигацией
-
-
+// работа с навигацией конец
 
 
 //приводим слайдер в движение
@@ -152,15 +150,9 @@ sliderDots.querySelector(".active").classList.remove("active");
 sliderDots.querySelector(".n" + num).classList.add("active");
 sliderNavigation.querySelector(".active").classList.remove("active");
 sliderNavigation.querySelector(".n" + num).classList.add("active");
-sliderDescription.querySelector(".active").classList.remove("active");
-sliderDescription.querySelector(".n" + num).classList.add("active");
-
+initDescription(num);
 };
 
-
-
-
 }
-
 
 document.addEventListener("DOMContentLoaded", initSlides);
