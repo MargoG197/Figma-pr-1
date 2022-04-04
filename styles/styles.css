@@ -18,7 +18,7 @@
     
     body * {
         box-sizing: border-box;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
     
     .title {
@@ -228,7 +228,8 @@
         margin-left: 0;
     }
     
-    .header_nav_item2 a {
+    .header_nav_item2 {
+        list-style: none;
         margin-left: none;
         text-align: start;
         text-decoration: none;
@@ -236,9 +237,10 @@
         color: rgba(255, 255, 255, 0.3);
         padding-bottom: 5px;
         margin-right: 27px;
+        cursor: pointer;
     }
     
-    .header_nav_item2 a:hover {
+    .header_nav_item2:hover,.header_nav_item2.active {
         color: #E3B873;
         border-bottom: 1px solid #E3B873;
     }
@@ -268,7 +270,7 @@
         margin-bottom: 42px;
     }
     
-    .container2 {
+    .container2_2 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -278,11 +280,80 @@
     .container2_item2 {
         margin-left: 65px;
     }
+
+    .slider__images{
+        position: relative;
+        background-image: none;
+        z-index: 10;
+        width: 679px;
+        height: 482px;
+    }
+    .slider__images .image {
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: opacity 800ms ease;
+      }
+
+      .slider__images .image.active {
+        opacity: 1;
+      }
     
     .group8 {
+        margin-left: 0;
+        display: block;
+        position: relative;
         padding-top: 60px;
+        width: 203 px;
+    }
+    .slider__arrow {
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+  display: flex;
+    }
+
+    .slider__arrow:hover {
+        opacity: 1;
+      }
+
+    .left{
+        position: absolute;
+        margin-left: 0;
     }
     
+    .right{
+        position: absolute;
+        margin-left: 160px;
+    }
+
+    .slider__dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 150px;
+        z-index: 2;
+        margin-left: 30px;
+      }
+      
+      .slider__dots-item {
+        width: 10px;
+        height: 10px;
+        background: rgb(129, 125, 125);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background 0.4s ease;
+      }
+      
+      .slider__dots-item:hover, .slider__dots-item.active {
+        background: white;
+      }
+
     .container_online_control {
         display: flex;
         flex-direction: column;
